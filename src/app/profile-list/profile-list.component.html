@@ -1,0 +1,11 @@
+
+<ul class="profiles">
+    <li *ngFor="let profile of profiles">
+        <a routerLink="/detail/{{profile.id}}">
+            <!-- <span class="badge">{{profile.id}}:</span> -->
+            {{ profile.name }}
+        </a>
+        <span>{{ profile.datetime | date:"yyyy-MM-ddTHH:mm" }}</span>
+        <button class="delete" title="delete profile" (click)="delete(profile)">x</button>
+    </li>
+</ul>
