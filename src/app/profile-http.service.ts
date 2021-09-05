@@ -9,7 +9,7 @@ import { ProfileService } from './profile.service';
 @Injectable({
   providedIn: 'root'
 })
-export class ProfileInMemoryService extends ProfileService {
+export class ProfileHttpService extends ProfileService {
 
   private profilesUrl = 'api/profiles';  // Web APIのURL
   httpOptions = {
