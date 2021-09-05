@@ -1,5 +1,5 @@
 nav {
-    a {
-        margin: 1em;
+    a + a {
+        margin-left: 1em;
     }
 }
