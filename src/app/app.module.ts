@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { NgxKjuaModule } from 'ngx-kjua';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -16,6 +16,12 @@ import { ProfileHttpService } from './profile-http.service';
 import { ProfileDexieService } from './profile-dexie.service';
 import { ProfileListComponent } from './profile-list/profile-list.component';
 import { ProfileDetailComponent } from './profile-detail/profile-detail.component';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -41,6 +47,14 @@ import { ProfileDetailComponent } from './profile-detail/profile-detail.componen
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
+    }),
+    HttpClientModule,
+    TranslateModule.forRoot({
+        loader: {
+            provide: TranslateLoader,
+            useFactory: (createTranslateLoader),
+            deps: [HttpClient]
+        }
     })
   ],
   providers: [

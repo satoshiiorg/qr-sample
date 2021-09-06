@@ -51,6 +51,10 @@ export class ProfileDexieService extends ProfileService {
   }
 
   override updateProfile(profile: Profile): Observable<any> {
+    // 名前が空の場合はテキストの冒頭10文字を代わりに使用
+    if(!profile.name) {
+      profile.name = profile.text.substring(0, 10);
+    }
     // TODO ここは一考
     profile.datetime = new Date();
     return from(this.table.update(profile.id, profile));
@@ -58,6 +62,10 @@ export class ProfileDexieService extends ProfileService {
   }
 
   override addProfile(profile: Profile): Observable<Profile> {
+    // 名前が空の場合はテキストの冒頭10文字を代わりに使用
+    if(!profile.name) {
+      profile.name = profile.text.substring(0, 10);
+    }
     profile.datetime = new Date();
     return from(this.table.add(profile).then(id => {profile.id = id; return profile;}));
   }

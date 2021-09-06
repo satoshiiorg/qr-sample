@@ -1,6 +1,14 @@
 
 <nav>
-    <a routerLink="/new">New QR</a>
-    <a routerLink="/profiles">QR List</a>
+    <a routerLink="/new" translate>new-qr</a>
+    <a routerLink="/profiles" translate>qr-list</a>
 </nav>
 <router-outlet></router-outlet>
+<div>
+    <select (change)="changeLang($event)">
+        <option *ngFor="let lang of languages; let i = index;"
+         [value]="lang.lang" [selected]="isCurrentLang(lang.lang)">
+            <span>{{ lang.label }}</span>
+        </option>
+    </select>
+</div>

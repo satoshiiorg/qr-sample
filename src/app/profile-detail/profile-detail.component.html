@@ -1,11 +1,11 @@
 <div *ngIf="profile">
-    <h2>{{profile.name || "New"}} QR Code</h2>
+    <h2>{{'qr-detail-title' | translate:{"profileName": profile.name || ('new' | translate)} }}</h2>
     <div class="profile">
-        <label for="name">Title: </label>
+        <label for="name" translate>qr-title</label>
         <input id="name" [(ngModel)]="profile.name" placeholder="title">
-        <label for="text">Text for QR: </label>
+        <label for="text" translate>qr-text</label>
         <textarea id="text" [(ngModel)]="profile.text" placeholder="text"></textarea>
-        <button (click)="profile.id ? save() : add()">save</button>
+        <button (click)="profile.id ? save() : add()" translate>save</button>
     
         <ngx-kjua
         [text]="profile.text"

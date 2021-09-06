@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  defaultLang: 'en',
+  languages: [ {'lang': 'en', 'label': 'English'}, {'lang': 'ja', 'label': '日本語'} ]
 };
 
 /*

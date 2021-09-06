@@ -1,0 +1,11 @@
+{
+  "title": "QR Code Generator",
+  "new-qr": "New QR",
+  "new": "New ",
+  "qr-list": "QR List",
+  "qr-detail-title": "{{profileName}} QR Code",
+  "qr-title": "Title",
+  "qr-text": "Text",
+  "save": "Save",
+  "delete": "Delete"
+}
