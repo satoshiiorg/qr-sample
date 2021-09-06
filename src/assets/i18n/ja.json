@@ -1,0 +1,11 @@
+{
+  "title": "QRコード生成",
+  "new-qr": "新規QR",
+  "new": "新規",
+  "qr-detail-title": "{{profileName}} QRコード",
+  "qr-list": "QRリスト",
+  "qr-title": "QR名",
+  "qr-text": "QR文字列",
+  "save": "保存",
+  "delete": "削除"
+}
