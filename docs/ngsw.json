@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1630813743304,
-  "index": "https://satoshiiorg.github.io/qr-sample/index.html",
+  "timestamp": 1630916541523,
+  "index": "/qr-sample/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://satoshiiorg.github.io/qr-sample/favicon.ico",
-        "https://satoshiiorg.github.io/qr-sample/index.html",
-        "https://satoshiiorg.github.io/qr-sample/main.c87aaae4997ce80179dd.js",
-        "https://satoshiiorg.github.io/qr-sample/manifest.webmanifest",
-        "https://satoshiiorg.github.io/qr-sample/polyfills.6deb6bf7c2c8f05e9c23.js",
-        "https://satoshiiorg.github.io/qr-sample/runtime.2fd89df2ca6305009919.js",
-        "https://satoshiiorg.github.io/qr-sample/styles.31d6cfe0d16ae931b73c.css"
+        "/qr-sample/favicon.ico",
+        "/qr-sample/index.html",
+        "/qr-sample/main.c87aaae4997ce80179dd.js",
+        "/qr-sample/manifest.webmanifest",
+        "/qr-sample/polyfills.6deb6bf7c2c8f05e9c23.js",
+        "/qr-sample/runtime.2fd89df2ca6305009919.js",
+        "/qr-sample/styles.31d6cfe0d16ae931b73c.css"
       ],
       "patterns": []
     },
@@ -29,35 +29,35 @@
         "ignoreVary": true
       },
       "urls": [
-        "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-128x128.png",
-        "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-144x144.png",
-        "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-152x152.png",
-        "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-192x192.png",
-        "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-384x384.png",
-        "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-512x512.png",
-        "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-72x72.png",
-        "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-96x96.png"
+        "/qr-sample/assets/icons/icon-128x128.png",
+        "/qr-sample/assets/icons/icon-144x144.png",
+        "/qr-sample/assets/icons/icon-152x152.png",
+        "/qr-sample/assets/icons/icon-192x192.png",
+        "/qr-sample/assets/icons/icon-384x384.png",
+        "/qr-sample/assets/icons/icon-512x512.png",
+        "/qr-sample/assets/icons/icon-72x72.png",
+        "/qr-sample/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
-    "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
-    "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
-    "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
-    "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
-    "https://satoshiiorg.github.io/qr-sample/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "https://satoshiiorg.github.io/qr-sample/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "https://satoshiiorg.github.io/qr-sample/index.html": "f92758378c1549276105e511b98bffe98ac8699f",
-    "https://satoshiiorg.github.io/qr-sample/main.c87aaae4997ce80179dd.js": "e258210246d2a53c5c03a78284483543d37f47b7",
-    "https://satoshiiorg.github.io/qr-sample/manifest.webmanifest": "5e82c6c477ea3149a91635a0b3b932e48343db28",
-    "https://satoshiiorg.github.io/qr-sample/polyfills.6deb6bf7c2c8f05e9c23.js": "0b613fd0d752047f569a4fba813ec5046c11c255",
-    "https://satoshiiorg.github.io/qr-sample/runtime.2fd89df2ca6305009919.js": "4675a81298f2dfc9c002aeabce680aa8b91a8d13",
-    "https://satoshiiorg.github.io/qr-sample/styles.31d6cfe0d16ae931b73c.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "/qr-sample/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/qr-sample/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/qr-sample/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/qr-sample/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/qr-sample/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/qr-sample/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/qr-sample/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/qr-sample/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/qr-sample/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/qr-sample/index.html": "12934dd5803c1ed1a57134d12bed7e68c2890a08",
+    "/qr-sample/main.c87aaae4997ce80179dd.js": "e258210246d2a53c5c03a78284483543d37f47b7",
+    "/qr-sample/manifest.webmanifest": "5e82c6c477ea3149a91635a0b3b932e48343db28",
+    "/qr-sample/polyfills.6deb6bf7c2c8f05e9c23.js": "0b613fd0d752047f569a4fba813ec5046c11c255",
+    "/qr-sample/runtime.2fd89df2ca6305009919.js": "4675a81298f2dfc9c002aeabce680aa8b91a8d13",
+    "/qr-sample/styles.31d6cfe0d16ae931b73c.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
   },
   "navigationUrls": [
     {
