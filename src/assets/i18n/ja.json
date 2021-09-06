@@ -7,5 +7,7 @@
   "qr-title": "QR名",
   "qr-text": "QR文字列",
   "save": "保存",
-  "delete": "削除"
+  "delete": "削除",
+  "English": "英語",
+  "Japanese": "日本語"
 }

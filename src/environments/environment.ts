@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  defaultLang: 'ja'
+  defaultLang: 'en',
+  languages: [ {'lang': 'en', 'label': 'English'}, {'lang': 'ja', 'label': 'Japanese'} ]
 };
 
 /*

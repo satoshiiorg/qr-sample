@@ -9,8 +9,24 @@ import { environment } from '../environments/environment';
 })
 export class AppComponent {
   title = 'qr-sample';
+  languages = environment.languages;
+  currentLang: string = environment.defaultLang;
+
   constructor(private translate: TranslateService) {
     translate.setDefaultLang(environment.defaultLang);
     translate.use(environment.defaultLang);
   }
+
+  changeLang(event: any): void {
+    const lang = event.target.value;
+    if (lang !== this.currentLang) {
+      this.translate.use(lang);
+      this.currentLang = lang;
+    }   
+  }
+
+  isCurrentLang(lang: string): boolean {
+    return lang === this.currentLang;
+  }
 }
+
