@@ -16,6 +16,12 @@ MIT
 @angular/service-worker
 MIT
 
+@ngx-translate/core
+MIT
+
+@ngx-translate/http-loader
+MIT
+
 angular-in-memory-web-api
 MIT
 The MIT License

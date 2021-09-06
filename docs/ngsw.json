@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1630919730399,
+  "timestamp": 1630920131122,
   "index": "/qr-sample/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/qr-sample/favicon.ico",
         "/qr-sample/index.html",
-        "/qr-sample/main.c87aaae4997ce80179dd.js",
+        "/qr-sample/main.5eb86e0d7ab2a07712d8.js",
         "/qr-sample/manifest.webmanifest",
         "/qr-sample/polyfills.6deb6bf7c2c8f05e9c23.js",
         "/qr-sample/runtime.2fd89df2ca6305009919.js",
@@ -29,6 +29,8 @@
         "ignoreVary": true
       },
       "urls": [
+        "/qr-sample/assets/i18n/en.json",
+        "/qr-sample/assets/i18n/ja.json",
         "/qr-sample/assets/icons/icon-128x128.png",
         "/qr-sample/assets/icons/icon-144x144.png",
         "/qr-sample/assets/icons/icon-152x152.png",
@@ -43,6 +45,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
+    "/qr-sample/assets/i18n/en.json": "9b4a6b6fda53eba90545941014464d8355977f7d",
+    "/qr-sample/assets/i18n/ja.json": "0862a53cab64b4c79c098e8fa33b6d682867326e",
     "/qr-sample/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
     "/qr-sample/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
     "/qr-sample/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
@@ -51,9 +55,9 @@
     "/qr-sample/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
     "/qr-sample/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/qr-sample/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
-    "/qr-sample/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/qr-sample/index.html": "12934dd5803c1ed1a57134d12bed7e68c2890a08",
-    "/qr-sample/main.c87aaae4997ce80179dd.js": "e258210246d2a53c5c03a78284483543d37f47b7",
+    "/qr-sample/favicon.ico": "f7d47145b5985e0d6b70a1f70fd7d2cd1bfcdcde",
+    "/qr-sample/index.html": "55f1c62a503f55146826e594dc0b27f4bf014e1e",
+    "/qr-sample/main.5eb86e0d7ab2a07712d8.js": "0e355119ebd3b308a23b03369df3aae3ac5e596e",
     "/qr-sample/manifest.webmanifest": "5e82c6c477ea3149a91635a0b3b932e48343db28",
     "/qr-sample/polyfills.6deb6bf7c2c8f05e9c23.js": "0b613fd0d752047f569a4fba813ec5046c11c255",
     "/qr-sample/runtime.2fd89df2ca6305009919.js": "4675a81298f2dfc9c002aeabce680aa8b91a8d13",
