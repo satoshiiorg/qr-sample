@@ -6,8 +6,9 @@
 <router-outlet></router-outlet>
 <div>
     <select (change)="changeLang($event)">
-        <option *ngFor="let lang of languages; let i = index;" [value]="lang.lang" [selected]="isCurrentLang(lang.lang)">
-            <span translate>{{ lang.label }}</span>
+        <option *ngFor="let lang of languages; let i = index;"
+         [value]="lang.lang" [selected]="isCurrentLang(lang.lang)">
+            <span>{{ lang.label }}</span>
         </option>
     </select>
 </div>

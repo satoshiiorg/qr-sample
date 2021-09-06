@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   defaultLang: 'en',
-  languages: [ {'lang': 'en', 'label': 'English'}, {'lang': 'ja', 'label': 'Japanese'} ]
+  languages: [ {'lang': 'en', 'label': 'English'}, {'lang': 'ja', 'label': '日本語'} ]
 };
 
 /*
