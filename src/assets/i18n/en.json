@@ -8,6 +8,6 @@
   "qr-text": "Text",
   "save": "Save",
   "delete": "Delete",
-  "scan-success": "Scan successful",
+  "scan-success": "Successfully scanned",
   "scan-error": "Scan failed"
 }
