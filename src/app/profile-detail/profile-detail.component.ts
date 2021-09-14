@@ -4,6 +4,7 @@ import { Profile } from '../profile';
 import { ProfileService } from '../profile.service';
 import { Location } from '@angular/common';
 import jsQR from 'jsqr';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-profile-detail',
@@ -53,6 +54,7 @@ export class ProfileDetailComponent implements OnInit {
     this.location.back();
   }
 
+  @Input() message?: string;
   scanQr(list: any): void {
     const file = list[0];
     const reader = new FileReader();
@@ -67,8 +69,13 @@ export class ProfileDetailComponent implements OnInit {
         context.drawImage(img, 0, 0, canvas.width, canvas.height);
         const imageData = context.getImageData(0, 0, canvas.width, canvas.height).data!;
         const code = jsQR(imageData, canvas.width, canvas.height);
-        if(this.profile) {
-          this.profile.text = code?.data ?? "Scan Error";
+        if(code) {
+          if(this.profile) {
+            this.profile.text = code.data;
+          }
+          this.message = "scan-success";
+        } else {
+          this.message = "scan-error";
         }
       }
     }
