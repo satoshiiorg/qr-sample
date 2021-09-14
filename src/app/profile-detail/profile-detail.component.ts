@@ -3,6 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Profile } from '../profile';
 import { ProfileService } from '../profile.service';
 import { Location } from '@angular/common';
+import jsQR from 'jsqr';
+import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-profile-detail',
@@ -50,5 +52,33 @@ export class ProfileDetailComponent implements OnInit {
 
   goBack(): void {
     this.location.back();
+  }
+
+  @Input() message?: string;
+  scanQr(list: any): void {
+    const file = list[0];
+    const reader = new FileReader();
+    reader.onload = () => {
+      const canvas = document.getElementById('canvas') as HTMLCanvasElement;
+      const context = canvas.getContext('2d')!;
+      const img: HTMLImageElement = new Image();
+      img.src = reader.result as string;
+      img.onload = () => {
+        canvas.width = img.width;
+        canvas.height = img.height;
+        context.drawImage(img, 0, 0, canvas.width, canvas.height);
+        const imageData = context.getImageData(0, 0, canvas.width, canvas.height).data!;
+        const code = jsQR(imageData, canvas.width, canvas.height);
+        if(code) {
+          if(this.profile) {
+            this.profile.text = code.data;
+          }
+          this.message = "scan-success";
+        } else {
+          this.message = "scan-error";
+        }
+      }
+    }
+    reader.readAsDataURL(file);
   }
 }

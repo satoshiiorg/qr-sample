@@ -12,5 +12,9 @@
         [render]="'image'"
         ></ngx-kjua>
     </div>
-    <!-- <button (click)="goBack()">go back</button> -->
+    <div *ngIf="!profile.id">
+        <input id="file" name="file" type="file" #fl accept="image/*" (change)="scanQr(fl.files)" >
+        <div *ngIf="message">{{ message | translate }}</div>
+        <canvas id="canvas" style="display:none;"></canvas>
+    </div>
 </div>

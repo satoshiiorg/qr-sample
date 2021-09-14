@@ -7,5 +7,7 @@
   "qr-title": "QR名",
   "qr-text": "QR文字列",
   "save": "保存",
-  "delete": "削除"
+  "delete": "削除",
+  "scan-success": "読み込み成功",
+  "scan-error": "読み込み失敗"
 }

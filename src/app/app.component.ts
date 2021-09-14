@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Inject } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { environment } from '../environments/environment';
 import { Title }     from '@angular/platform-browser';
+import { DOCUMENT } from '@angular/common';
 import { EnvService } from './env.service';
 
 @Component({
@@ -14,7 +15,11 @@ export class AppComponent {
   languages = environment.languages;
   currentLang: string = environment.defaultLang;
 
-  constructor(private title: Title, private translate: TranslateService, private envService: EnvService) {
+  constructor(
+    private title: Title,
+    @Inject(DOCUMENT) private document: any,
+    private translate: TranslateService,
+    private envService: EnvService) {
     envService.getEnv().subscribe(env => {
       // envServiceから言語設定が取れたらデフォルトを上書きする
       if(environment.languages.some(language => language.lang === env.lang)) {
@@ -23,11 +28,14 @@ export class AppComponent {
       translate.setDefaultLang(environment.defaultLang);
       translate.use(environment.defaultLang);
       this.currentLang = environment.defaultLang;
-      this.setTitle();
+      this.onChangeLanguage();
     });
   }
 
-  setTitle() {
+  onChangeLanguage() {
+    // html lang属性を変更
+    document.documentElement.lang = this.currentLang;
+    // title要素を変更
     this.translate.get("title").subscribe((res: string) => {
       this.title.setTitle(res);
     });
@@ -38,7 +46,7 @@ export class AppComponent {
     if (lang !== this.currentLang) {
       this.translate.use(lang);
       this.currentLang = lang;
-      this.setTitle();
+      this.onChangeLanguage();
       // 設定を保存
       this.envService.setEnv({lang:lang}).subscribe();
     }
