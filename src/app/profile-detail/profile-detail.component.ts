@@ -60,7 +60,7 @@ export class ProfileDetailComponent implements OnInit {
     reader.onload = () => {
       const canvas = document.getElementById('canvas') as HTMLCanvasElement;
       const context = canvas.getContext('2d')!;
-      const img: HTMLImageElement = new Image();
+      const img = new Image();
       img.src = reader.result as string;
       img.onload = () => {
         canvas.width = img.width;
