@@ -4,7 +4,6 @@ import { Profile } from '../profile';
 import { ProfileService } from '../profile.service';
 import { Location } from '@angular/common';
 import jsQR from 'jsqr';
-import { TranslatePipe } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-profile-detail',
